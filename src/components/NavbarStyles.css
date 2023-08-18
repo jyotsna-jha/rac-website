@@ -1,0 +1,86 @@
+/* Import fonts here */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-family: Ubuntu;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  margin-right: 20px;
+}
+
+.nav-link a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 8px 15px;
+  background-color: #f7d794;
+  border-radius: 20px;
+}
+
+.nav-link a:hover {
+  color: white;
+  background-color: #333;
+}
+
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    transition: transform 0.3s;
+    transform: translateY(-100%); /* Changed this to initial state */
+  }
+
+  .hamburger-icon.active {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  .nav-link {
+    margin: 15px 0;
+  }
+}

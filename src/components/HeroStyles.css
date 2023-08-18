@@ -1,0 +1,113 @@
+/* HeroStyles.css */
+
+/* Adjust the hero's height to 100vh to fill the viewport */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Distribute elements across the space */
+  align-items: center;
+  height: 100vh; /* Set to 100vh */
+  background-image: url("../assets/bgf.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  color: #fff; /* Text color for better contrast */
+}
+
+/* White mask layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Text container */
+.text-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero text */
+.hero-text {
+  font-size: 2rem; /* Adjust font size */
+  margin-bottom: 10px;
+}
+
+/* Subtext */
+.subtext {
+  font-size: 1rem; /* Adjust font size */
+  opacity: 0.8;
+}
+
+/* Centering the Lottie animations */
+.lottie-container {
+  display: flex;
+  justify-content: center; /* Center lotties horizontally */
+  align-items: flex-start; /* Align lotties at the top */
+  flex-wrap: wrap; /* Allow lotties to wrap on smaller screens */
+  padding: 20px; /* Adjust padding */
+  position: relative; /* Add relative positioning */
+  z-index: 1; /* Place lotties above other elements */
+  margin-top: -150px; /* Adjust margin to bring the Lottie container more above */
+}
+
+.vdobutton,
+.robot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px; /* Add spacing between lotties */
+}
+
+.vdobutton {
+  width: 250px; /* Adjust width */
+  height: 250px; /* Adjust height */
+}
+
+.robot {
+  width: 400px; /* Adjust width */
+  height: 400px; /* Adjust height */
+  margin-left: auto; /* Move the Robot towards the right */
+  margin-top: -250px; /* Adjust margin to bring the Robot further above */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 150px;
+    height: 150px;
+  }
+
+  .lottie-container {
+    margin-top: -100px; /* Adjust margin for smaller screens */
+  }
+
+  .hero {
+    align-items: center; /* Center items vertically for mobile layout */
+    min-height: 100vh; /* Set min-height to 100vh for mobile */
+    background-size: cover; /* Keep background-size */
+  }
+
+  .lottie-container {
+    margin-top: -50px; /* Adjust margin for smaller screens */
+  }
+}
