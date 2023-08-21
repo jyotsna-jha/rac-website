@@ -1,3 +1,3965 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Lottie from "lottie-react";
+import Robot from "../Robot1.json";
+import "./HeroStyles.css"; // Import the CSS file
+import videobutton from "../videobutton.json";
+
+const Hero = () => {
+  return (
+    <div className="hero">
+      <div className="text-container">
+        <h1 className="hero-text">Robotics And Automation Center</h1>
+        <p className="subtext">A team of tech-loving minds</p>
+      </div>
+      <div className="content-container">
+        <div className="robot">
+          <Lottie animationData={Robot} />
+        </div>
+        <div className="vdobutton">
+          <Lottie animationData={videobutton} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
+
+ 
+/* HeroStyles.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensure the component takes the full viewport height */
+  background: url("../assets/bgf.jpg") center/cover no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Expand this section to take available space */
+  position: relative; /* To make positioning of robot relative to this container */
+}
+
+.robot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 50%; /* Reduce the maximum width of the robot animation */
+}
+
+.vdobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the component responsive for small screens */
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover; /* Adjust background size to cover the entire screen */
+  }
+
+  .hero-text {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+
+  .subtext {
+    font-size: 0.8rem; /* Decrease font size for smaller screens */
+  }
+
+  .robot {
+    max-width: 30%; /* Further reduce robot size on small screens */
+    bottom: auto; /* Reset robot position to its default */
+    top: 0; /* Position robot at the top for small screens */
+  }
+
+  .vdobutton {
+    order: -1; /* Move the video button above the text content */
+    margin-top: 10px; /* Add less space between the video button and text */
+    max-width: 35%; /* Increase the size of the video button even more */
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensure the component takes the full viewport height */
+  background: url("../assets/bgf.jpg") center/cover no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Expand this section to take available space */
+  position: relative; /* To make positioning of robot relative to this container */
+}
+
+.robot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 50%; /* Reduce the maximum width of the robot animation */
+}
+
+.vdobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the component responsive for small screens */
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover; /* Adjust background size to cover the entire screen */
+  }
+
+  .hero-text {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+
+  .subtext {
+    font-size: 0.8rem; /* Decrease font size for smaller screens */
+  }
+
+  .robot {
+    max-width: 30%; /* Further reduce robot size on small screens */
+    bottom: auto; /* Reset robot position to its default */
+    top: 0; /* Position robot at the top for small screens */
+  }
+
+  .vdobutton {
+    order: -1; /* Move the video button above the text content */
+    margin-top: 10px; /* Add less space between the video button and text */
+    max-width: 25%; /* Increase the size of the video button */
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensure the component takes the full viewport height */
+  background: url("../assets/bgf.jpg") center/cover no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Expand this section to take available space */
+  position: relative; /* To make positioning of robot relative to this container */
+}
+
+.robot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 50%; /* Reduce the maximum width of the robot animation */
+}
+
+.vdobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the component responsive for small screens */
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover; /* Adjust background size to cover the entire screen */
+  }
+
+  .hero-text {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+
+  .subtext {
+    font-size: 0.8rem; /* Decrease font size for smaller screens */
+  }
+
+  .robot {
+    max-width: 30%; /* Further reduce robot size on small screens */
+    bottom: auto; /* Reset robot position to its default */
+    top: 0; /* Position robot at the top for small screens */
+  }
+
+  .vdobutton {
+    order: -1; /* Move the video button above the text content */
+    margin-top: 20px; /* Add some space between the video button and text */
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensure the component takes the full viewport height */
+  background: url("../assets/bgf.jpg") center/cover no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Expand this section to take available space */
+  position: relative; /* To make positioning of robot relative to this container */
+}
+
+.robot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 50%; /* Reduce the maximum width of the robot animation */
+}
+
+.vdobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the component responsive for small screens */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+
+  .subtext {
+    font-size: 0.8rem; /* Decrease font size for smaller screens */
+  }
+
+  .robot {
+    max-width: 30%; /* Further reduce robot size on small screens */
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensure the component takes the full viewport height */
+  background: url("../assets/bgf.jpg") center/cover no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Expand this section to take available space */
+  position: relative; /* To make positioning of robot relative to this container */
+}
+
+.robot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 50%; /* Reduce the maximum width of the robot animation */
+}
+
+.vdobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the component responsive for small screens */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+
+  .subtext {
+    font-size: 0.8rem; /* Decrease font size for smaller screens */
+  }
+
+  .robot {
+    max-width: 30%; /* Further reduce robot size on small screens */
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensure the component takes the full viewport height */
+  background: url("../assets/bgf.jpg") center/cover no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Expand this section to take available space */
+}
+
+.robot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.vdobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensure the component takes the full viewport height */
+  background: url("../assets/bgf.jpg") center/cover no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Expand this section to take available space */
+}
+
+.robot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.vdobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensure the component takes the full viewport height */
+  background: url("../assets/bgf.jpg") center/cover no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Expand this section to take available space */
+}
+
+.robot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.vdobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensure the component takes the full viewport height */
+  background: url("../assets/bgf.jpg") center/cover no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Expand this section to take available space */
+}
+
+.robot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.vdobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%; /* Vertically center the container */
+  left: 50%; /* Horizontally center the container */
+  transform: translate(-50%, -50%);
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 5%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 5%; /* Adjusted to place text slightly higher */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: 1rem; /* Adjusted to bring it a bit higher */
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: -1.5rem; /* Moved the robot slightly higher */
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 3%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%; /* Vertically center the container */
+  left: 50%; /* Horizontally center the container */
+  transform: translate(-50%, -50%);
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 5%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: -2.5rem; /* Adjusted to bring it further above */
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 3%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: 1rem; /* Move the video button down */
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: -1.5rem; /* Move the robot animation up */
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 3%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: -2rem; /* Adjusted to bring it above */
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: 1rem; /* Adjusted to move it below */
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 3%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: 1rem; /* Moved the vdo button lower */
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: -2rem; /* Adjusted to bring the robot higher */
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 3%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: -2rem; /* Adjusted to bring it a bit higher */
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: 1rem; /* Moved the robot slightly lower */
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 3%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: -2rem; /* Adjusted to bring it a bit higher */
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 3%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 2%; /* Adjusted to place text a bit higher */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  font-family:san-serif;
+}
+
+.subtext {
+  font-size: 1.5rem;
+  font-family:san-serif;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: -1.5rem;
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 3%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 5%; /* Adjusted to place text slightly higher */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: -1.5rem;
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 3%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 0.5rem 0; /* Adjusted margin for vdo button */
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: -1.5rem; /* Moved the vdo button slightly above */
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+  margin-top: 0.5rem; /* Moved the robot slightly down */
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 5%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 10%; /* Adjusted to create more space from the top */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1rem; /* Adjusted padding to provide more space */
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+  margin-top: -1rem; /* Adjusted to bring it a bit above */
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 5%; /* Adjusted for smaller screens */
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem; /*changed from 2.5 to 3 */
+  margin-bottom: 0.5rem;
+  font-family:san-serif;
+}
+
+.subtext {
+  font-size: 1.5rem;
+  font-family:san-serif;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%; /* Vertically center the container */
+  left: 50%; /* Horizontally center the container */
+  transform: translate(-50%, -50%);
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width:230px;
+  
+}
+
+.robot {
+  margin-right: 1rem;
+  width: 30%;
+  max-width:250px;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    top: 3vh;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  max-width: 800px;
+  width: 90%;
+  font-family: sans-serif;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width: 230px;
+}
+
+.robot {
+  width: 30%;
+  max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    top: 10%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.25rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    position: static;
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem; /*changed from 2.5 to 3 */
+  margin-bottom: 0.5rem;
+  font-family:san-serif;
+}
+
+.subtext {
+  font-size: 1.5rem;
+  font-family:san-serif;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%; /* Vertically center the container */
+  left: 50%; /* Horizontally center the container */
+  transform: translate(-50%, -50%);
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width:230px;
+  
+}
+
+.robot {
+  margin-right: 1rem;
+  width: 30%;
+  max-width:250px;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    top: 3vh;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem; /*changed from 2.5 to 3 */
+  margin-bottom: 0.5rem;
+  font-family:san-serif;
+}
+
+.subtext {
+  font-size: 1.5rem;
+  font-family:san-serif;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%; /* Vertically center the container */
+  left: 50%; /* Horizontally center the container */
+  transform: translate(-50%, -50%);
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width:230px;
+  
+}
+
+.robot {
+  margin-right: 1rem;
+  width: 30%;
+  max-width:250px;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    top: 3vh;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 3.5rem; /*changed from 2.5 to 3 */
+  margin-bottom: 0.5rem;
+  font-family:san-serif;
+}
+
+.subtext {
+  font-size: 1.5rem;
+  font-family:san-serif;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%; /* Vertically center the container */
+  left: 50%; /* Horizontally center the container */
+  transform: translate(-50%, -50%);
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+  max-width:230px;
+  
+}
+
+.robot {
+  margin-right: 1rem;
+  width: 30%;
+  max-width:250px;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    top: 3vh;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 1vh; /* Adjust the value for vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.25rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 250px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+}
+
+.robot {
+  margin-right: 1rem;
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    top: 3vh;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 1rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 2vh; /* Adjust the value for vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.25rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5vh; /* Adjust the value for vertical position */
+  right: 5vw; /* Adjust the value for horizontal position */
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 250px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+}
+
+.robot {
+  margin-right: 1rem;
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    top: 5vh;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 1rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 5vh; /* Adjust the value for vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.25rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%;
+  max-width: 250px;
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%;
+}
+
+.robot {
+  margin-right: 1rem;
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    top: 10vh;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 1rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 10vh; /* Adjust the value for vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.25rem;
+  margin-bottom:2rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%; /* Vertically align the container */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 60%; /* Increase the width for the video button */
+  max-width: 250px; /* Adjust max width as needed */
+  margin: 1rem 0;
+}
+
+.vdobutton {
+  width: 80%; /* Adjust the width for smaller screens */
+}
+
+.robot {
+  margin-right: 1rem; /* Add spacing from the right edge */
+  width: 30%; /* Adjust the width for larger screens */
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    top: 20vh;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 1rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.25rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 40%;
+  max-width: 200px;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    margin-top: 15vh;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 1rem 0;
+  }
+
+  .content-container {
+    padding: 1rem;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center text container */
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.25rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 40%;
+  max-width: 300px; /* Adjust the max width as needed */
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    margin-top: 15vh;
+  }
+
+  .content-container {
+    padding: 2rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%;
+    margin: 1rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin-top: 20vh; /* Adjust the value for vertical alignment */
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: sans-serif; /* Apply san serif font */
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.25rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 40%; /* Adjust width as needed */
+}
+
+.robot {
+  margin-right: 1rem; /* Add some spacing from the right edge */
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    margin-top: 15vh;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 1rem 0;
+  }
+
+  .robot {
+    margin-right: 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; /* Prevent content from overflowing and creating scrollbars */
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 40%; /* Adjust width as needed */
+}
+
+.robot {
+  align-self: flex-end; /* Push the robot to the bottom right */
+  width: 30%; /* Adjust width as needed */
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 0.75rem;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 1rem 0;
+  }
+
+  .robot {
+    align-self: center; /* Center the robot on small screens */
+    margin-right: 0; /* Remove margin for centering */
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; /* Prevent content from overflowing and creating scrollbars */
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%; /* Vertically align text container */
+  transform: translateY(-50%); /* Center text container */
+}
+
+.hero-text {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start; /* Align content at the top */
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  max-width: 40%; /* Adjust width as needed */
+}
+
+.robot {
+  align-self: flex-end; /* Push the robot to the right corner */
+  margin-right: 1rem; /* Add some spacing from the right edge */
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 0.75rem;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 1rem 0;
+  }
+
+  .robot {
+    align-self: center; /* Center the robot on small screens */
+    margin-right: 0; /* Remove margin for centering */
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-text {
+    font-size: 3rem;
+  }
+
+  .subtext {
+    font-size: 1.5rem;
+  }
+
+  .content-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 30%; /* Adjust width for larger screens */
+    margin: 0;
+  }
+
+  .robot {
+    align-self: flex-end;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; /* Prevent content from overflowing and creating scrollbars */
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start; /* Align content at the top */
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  max-width: 40%; /* Adjust width as needed */
+}
+
+.robot {
+  align-self: flex-end; /* Push the robot to the right corner */
+  margin-right: 1rem; /* Add some spacing from the right edge */
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 0.75rem;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 1rem 0;
+  }
+
+  .robot {
+    align-self: center; /* Center the robot on small screens */
+    margin-right: 0; /* Remove margin for centering */
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-text {
+    font-size: 3rem;
+  }
+
+  .subtext {
+    font-size: 1.5rem;
+  }
+
+  .content-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 30%; /* Adjust width for larger screens */
+    margin: 0;
+  }
+
+  .robot {
+    align-self: flex-end;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; /* Prevent content from overflowing and creating scrollbars */
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  width: 40%; /* Adjust width as needed */
+}
+
+.robot {
+  align-self: flex-end; /* Push the robot to the bottom right */
+  width: 30%; /* Adjust width as needed */
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 0.75rem;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 1rem 0;
+  }
+
+  .robot {
+    align-self: center; /* Center the robot on small screens */
+    margin-right: 0; /* Remove margin for centering */
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; /* Prevent content from overflowing and creating scrollbars */
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.25rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start; /* Align content at the top */
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  max-width: 40%; /* Adjust the max-width as needed */
+}
+
+.robot {
+  align-self: flex-end; /* Push the robot to the right corner */
+  margin-right: 1rem; /* Add some spacing from the right edge */
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vdobutton,
+  .robot {
+    max-width: 80%; /* Adjust the max-width for smaller screens */
+    margin: 1rem 0;
+  }
+
+  .robot {
+    align-self: center; /* Center the robot on small screens */
+    margin-right: 0; /* Remove the margin for centering */
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; /* Prevent content from overflowing and creating scrollbars */
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  max-width: 48%; /* Adjust the max-width as needed */
+}
+
+.robot {
+  align-self: flex-end; /* Push the robot to the right corner */
+  margin-right: 1rem; /* Add some spacing from the right edge */
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vdobutton,
+  .robot {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .robot {
+    align-self: center; /* Center the robot on small screens */
+    margin-right: 0; /* Remove the margin for centering */
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Adjust to bring content more above */
+  height: 100vh;
+  width: 100vw;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  max-width: 48%; /* Adjust the max-width as needed */
+}
+
+.robot {
+  align-self: flex-end; /* Push the robot to the right corner */
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vdobutton,
+  .robot {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+ 
+import React from "react";
+import { Link } from "react-router-dom";
+import Lottie from "lottie-react";
+import Robot from "../Robot1.json";
+import "./HeroStyles.css"; // Import the CSS file
+import videobutton from "../videobutton.json";
+
+const Hero = () => {
+  return (
+    <div className="hero">
+      <div className="text-container">
+        <h1 className="hero-text">Robotics And Automation Center</h1>
+        <p className="subtext">A team of tech-loving minds</p>
+      </div>
+      <div className="vdobutton">
+        <Lottie animationData={videobutton} />
+      </div>
+      <div className="robot">
+        <Lottie animationData={Robot} />
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; /* Prevent content from overflowing and creating scrollbars */
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  max-width: 48%; /* Adjust the max-width as needed */
+}
+
+.robot {
+  align-self: flex-end; /* Push the robot to the right corner */
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vdobutton,
+  .robot {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; /* Prevent content from overflowing and creating scrollbars */
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.hero-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.vdobutton,
+.robot {
+  animation: fadeInUp 1s ease-in-out;
+  max-width: 48%; /* Adjust the max-width as needed */
+}
+
+.robot {
+  align-self: flex-end; /* Push the robot to the right corner */
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vdobutton,
+  .robot {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.vdobutton {
+  margin-top: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.robot {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  margin-top: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.vdobutton {
+  margin-top: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.robot {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  margin-top: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ 
+/* HeroStyles.css */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('../assets/bgf.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+}
+
+.vdobutton {
+  margin-top: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.robot {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  margin-top: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ 
+import React from "react";
+import { Link } from "react-router-dom";
+import Lottie from "lottie-react";
+import Robot from "../Robot1.json";
+import "./HeroStyles.css";
+import videobutton from "../videobutton.json";
+
+const Hero = () => {
+  return (
+    <div className="hero">
+      <div className="text-container">
+        <h1 className="hero-text">Robotics And Automation Center</h1>
+        <p className="subtext">A team of tech loving minds</p>
+      </div>
+      <div className="vdobutton">
+        <Lottie animationData={videobutton}/>
+      </div>
+      <div className="robot">
+        <Lottie animationData={Robot} />
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
+
+ 
+/* HeroStyles.css */
+
+/* Adjust the hero's height to 100vh to fill the viewport */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Distribute elements across the space */
+  align-items: center;
+  height: 100vh; /* Set to 100vh */
+  background-image: url("../assets/bgf.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  color: #fff; /* Text color for better contrast */
+}
+
+/* White mask layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Text container */
+.text-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero text */
+.hero-text {
+  font-size: 2rem; /* Adjust font size */
+  margin-bottom: 10px;
+}
+
+/* Subtext */
+.subtext {
+  font-size: 1rem; /* Adjust font size */
+  opacity: 0.8;
+}
+
+/* Centering the Lottie animations */
+.lottie-container {
+  display: flex;
+  justify-content: center; /* Center lotties horizontally */
+  align-items: flex-start; /* Align lotties at the top */
+  flex-wrap: wrap; /* Allow lotties to wrap on smaller screens */
+  padding: 20px; /* Adjust padding */
+  position: relative; /* Add relative positioning */
+  z-index: 1; /* Place lotties above other elements */
+  margin-top: -150px; /* Adjust margin to bring the Lottie container more above */
+}
+
+.vdobutton,
+.robot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px; /* Add spacing between lotties */
+}
+
+.vdobutton {
+  width: 250px; /* Adjust width */
+  height: 250px; /* Adjust height */
+}
+
+.robot {
+  width: 400px; /* Adjust width */
+  height: 400px; /* Adjust height */
+  margin-left: auto; /* Move the Robot towards the right */
+  margin-top: -250px; /* Adjust margin to bring the Robot further above */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .vdobutton,
+  .robot {
+    width: 150px;
+    height: 150px;
+  }
+
+  .lottie-container {
+    margin-top: -100px; /* Adjust margin for smaller screens */
+  }
+
+  .hero {
+    align-items: center; /* Center items vertically for mobile layout */
+    min-height: 100vh; /* Set min-height to 100vh for mobile */
+    background-size: cover; /* Keep background-size */
+  }
+
+  .lottie-container {
+    margin-top: -50px; /* Adjust margin for smaller screens */
+  }
+}
+
+ 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bitter&family=Josefin+Sans:wght@100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
 
 .navbar {
